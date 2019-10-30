@@ -32,7 +32,7 @@ public class WordExtractorTest {
 
         String[] expectedResult = {"a", "of", "on"};
 
-        assertArrayEquals(wordsExtractor.extractMostOccurring(text), expectedResult);
+        assertArrayEquals(wordsExtractor.extractMostRecurring(text), expectedResult);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class WordExtractorTest {
 
         String[] expectedResult = {"won't", "wont"};
 
-        assertArrayEquals(wordsExtractor.extractMostOccurring(text), expectedResult);
+        assertArrayEquals(wordsExtractor.extractMostRecurring(text), expectedResult);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class WordExtractorTest {
 
         String[] expectedResult = {"x"};
 
-        assertArrayEquals(wordsExtractor.extractMostOccurring(text), expectedResult);
+        assertArrayEquals(wordsExtractor.extractMostRecurring(text), expectedResult);
     }
 
     @Test
@@ -59,7 +59,7 @@ public class WordExtractorTest {
 
         String[] expectedResult = {};
 
-        assertArrayEquals(wordsExtractor.extractMostOccurring(text), expectedResult);
+        assertArrayEquals(wordsExtractor.extractMostRecurring(text), expectedResult);
     }
 
     @Test
@@ -68,7 +68,7 @@ public class WordExtractorTest {
 
         String[] expectedResult = {};
 
-        assertArrayEquals(wordsExtractor.extractMostOccurring(text), expectedResult);
+        assertArrayEquals(wordsExtractor.extractMostRecurring(text), expectedResult);
     }
 
 }

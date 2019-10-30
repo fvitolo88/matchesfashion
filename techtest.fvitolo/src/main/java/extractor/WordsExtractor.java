@@ -40,7 +40,7 @@ public class WordsExtractor {
      * @param text the input text to analyze
      * @return the list of top {@code numberOfWords} matching words
      */
-    public String[] extractMostOccurring(String text) {
+    public String[] extractMostRecurring(String text) {
         List<String> words = listOfMatchingWords(text)
                 .stream()
                 .collect(Collectors.toMap(w -> w, w -> 1, (v1, v2) -> v1 + 1))
